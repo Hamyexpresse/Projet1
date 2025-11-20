@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'acceuil - Hamy International Clinique</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- En-tête principal -->
+    <header class="en-tete" role="banner">
+      <div class="logo">
+        <img src="../image/Logo.jpg" alt="Logo Hamy International" />
+        <div class="titre">
+          <h1 class="Pr">Hamy International</h1>
+          <p class="slogan">Votre santé est notre priorité</p>
+        </div>
+      </div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="specialité.html">Spécialistes</a></li>
+          <li><a href="rende-vous.html">Prendre RDV</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="prescription.html">Ordonnance</a></li>
+          <li><a href="paiement.html">Paiement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="ur"
+            type="button"onclick="location.href='urgence.html'" > URGENCE</button>
+          <button
+            class="rdv"
+            type="button"
+            onclick="location.href='rende-vous.html'"> Prendre RDV</button>
+        </div>
+      </nav>
+    </header>
+     <!-- Contenu principal -->
+     <main class="principale" role="main">
+      <!-- Hero enrichi : image à gauche, texte à droite -->
+      <section class="primaire" aria-labelledby="hero-title">
+        <div class="primaire-left">
+          <img src="../image/clinique1.jpg" alt="etablissement" />
+        </div>
+        <div class="primaire-right">
+          <p class="haut">Centre de santé médicale</p>
+          <h2 id="slg">LA PLUS HAUTE QUALITÉ DANS LES SOINS</h2>
+          <p class="mtv">
+            Notre équipe multidisciplinaire propose des soins personnalisés, des
+            équipements modernes et un suivi rigoureux pour votre santé.
+          </p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;padding:0 16px;margin-top:12px;">
+          <a href="rende-vous.html" class="btn btn-primary" style="text-align:center;padding:12px 20px;">📅 Prendre rendez-vous</a>
+          <a href="service.html" class="btn btn-outline" style="text-align:center;padding:12px 20px;">🏥 Découvrir nos services</a>
+          <a href="contact.html" class="btn btn-outline" style="text-align:center;padding:12px 20px;">📞 Nous contacter</a>
+        </div>
+      </section>
+
+      <!-- Section Statistiques -->
+      <section class="stats-section" aria-labelledby="stats-title" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:48px 24px;margin:32px 0;border-radius:12px;text-align:center;">
+        <h2 id="stats-title" style="margin-bottom:32px;font-size:2rem;">Nos chiffres clés</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;max-width:1000px;margin:0 auto;">
+          <div class="stat-card" style="padding:24px;background:rgba(255,255,255,0.1);border-radius:10px;backdrop-filter:blur(10px);">
+            <div class="stat-number" style="font-size:2.5rem;font-weight:bold;margin-bottom:8px;">500+</div>
+            <div class="stat-label" style="font-size:1rem;opacity:0.95;">Patients chaque mois</div>
+          </div>
+          <div class="stat-card" style="padding:24px;background:rgba(255,255,255,0.1);border-radius:10px;backdrop-filter:blur(10px);">
+            <div class="stat-number" style="font-size:2.5rem;font-weight:bold;margin-bottom:8px;">15+</div>
+            <div class="stat-label" style="font-size:1rem;opacity:0.95;">Années d'expérience</div>
+          </div>
+          <div class="stat-card" style="padding:24px;background:rgba(255,255,255,0.1);border-radius:10px;backdrop-filter:blur(10px);">
+            <div class="stat-number" style="font-size:2.5rem;font-weight:bold;margin-bottom:8px;">20+</div>
+            <div class="stat-label" style="font-size:1rem;opacity:0.95;">Médecins spécialistes</div>
+          </div>
+          <div class="stat-card" style="padding:24px;background:rgba(255,255,255,0.1);border-radius:10px;backdrop-filter:blur(10px);">
+            <div class="stat-number" style="font-size:2.5rem;font-weight:bold;margin-bottom:8px;">12</div>
+            <div class="stat-label" style="font-size:1rem;opacity:0.95;">Spécialités disponibles</div>
+          </div>
+        </div>
+      </section>
+       <!-- Points forts -->
+      <section class="points" aria-label="Points forts">
+        <div class="point">
+          <h3>Équipe certifiée</h3>
+          <p>Personnel médical diplômé et expérimenté.</p>
+        </div>
+        <div class="point">
+          <h3>Équipements modernes</h3>
+          <p>Imagerie et analyses de dernière génération.</p>
+        </div>
+        <div class="point">
+          <h3>Soins rapides</h3>
+          <p>Parcours patient optimisé pour réduire l'attente.</p>
+        </div>
+        <div class="point">
+          <h3>Suivi personnalisé</h3>
+          <p>Plans de soins adaptés à chaque patient.</p>
+        </div>
+      </section>
+
+      <!-- CTA Appel à l'action -->
+      <section class="cta-section" aria-labelledby="cta-title" style="background:#fff;padding:32px 24px;margin:24px 0;border-left:4px solid var(--accent);border-radius:8px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+        <h3 id="cta-title" style="margin-bottom:12px;color:var(--accent);">Prêt à prendre soin de votre santé ?</h3>
+        <p style="color:var(--text-light);margin-bottom:20px;font-size:1.05rem;">Nos experts sont à votre écoute pour vous proposer les meilleurs soins.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="rende-vous.html" class="btn btn-primary" style="padding:12px 24px;font-weight:600;">Prendre rendez-vous</a>
+          <a href="urgence.html" class="btn btn-outline" style="padding:12px 24px;font-weight:600;border-color:var(--accent);color:var(--accent);">Signaler une urgence</a>
+        </div>
+      </section>
+
+      <!-- Témoignages -->
+      <section class="temoignages" aria-labelledby="patient">
+        <h2 id="patient">Avis patients</h2>
+        <div class="pt">
+          <blockquote>
+            "Grâce à l'équipe, ma convalescence a été rapide et sereine."
+            <cite>— A. Traoré</cite>
+          </blockquote>
+          <blockquote>
+            "Service professionnel et à l'écoute." <cite>— N. Koulibaly</cite>
+          </blockquote>
+          <blockquote>
+            "Résultats rapides et personnel rassurant." <cite>— M. Koné</cite>
+          </blockquote>
+        </div>
+      </section>
+       <!-- Questions fréquentes -->
+      <section class="Questions" aria-labelledby="Question">
+        <h2 id="Question">Questions fréquentes</h2>
+        <details>
+          <summary>Faut‑il une ordonnance ?</summary>
+          <p>
+            Pour certaines consultations spécialisées, oui — vérifiez la fiche
+            service.
+          </p>
+        </details>
+        <details>
+          <summary>Comment prendre RDV ?</summary>
+          <p>Via le formulaire ci‑dessus, par téléphone ou à l'accueil.</p>
+        </details>
+        <details>
+          <summary>Comment obtenir mes résultats ?</summary>
+          <p>
+            Par email sécurisé ou retrait au laboratoire selon le type
+            d'analyse.
+          </p>
+        </details>
+      </section>
+      <!-- des images de nos locaux -->
+      <section class="gallery" aria-labelledby="gallerys">
+        <h2 id="gallerys">Nos locaux</h2>
+        <div class="gallery-images">
+          <img
+            src="../image/salle de consultation.webp" alt="Salle de consultation"/>
+          <img src="../image/salle d'attente.webp" alt="Salle d'attente" />
+          <img src="../image/laboratoire.jpg" alt="Laboratoire" />
+        </div>
+        <div style="text-align:center;margin-top:20px;">
+          <p style="color:var(--text-light);margin-bottom:12px;">Découvrez toutes nos spécialités dans une infrastructure moderne et accueillante.</p>
+          <a href="specialité.html" class="btn btn-primary" style="display:inline-block;padding:10px 20px;">Voir nos spécialistes →</a>
+        </div>
+      </section>
+       <!-- Pied de page enrichi -->
+    <footer id="contact" class="site-footer">
+      <div class="mon-pied-de-page">
+        <div class="pied">
+          <h3>Contact</h3>
+          <p>
+            Tél : 610 783 753<br />Email : xhamyexpresse@gmail.com <br />
+            Développé par: Fode Lamine Diane
+          </p>
+          <p></p>
+        </div>
+      </div>
+      <div style="text-align:center;padding-top:12px;color:var(--muted);">
+        <a href="privacy.html" style="color:var(--primary);text-decoration:none;margin-right:8px;">Politique de confidentialité</a>
+      </div>
+    </footer>
+  </body>
+</html>

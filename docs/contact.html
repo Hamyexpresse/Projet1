@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Contact — Hamy International : coordonnées, formulaire et plan d'accès." />
+    <title>Contact — Hamy International</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- En-tête principal -->
+    <header class="en-tete" role="banner">
+      <div class="logo">
+        <img src="../image/Logo.jpg" alt="Logo Hamy International" />
+        <div class="titre">
+          <h1 class="Pr">Hamy International</h1>
+          <p class="slogan">Votre santé est notre priorité</p>
+        </div>
+      </div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="specialité.html">Spécialistes</a></li>
+          <li><a href="rende-vous.html">Prendre RDV</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="prescription.html">Ordonnance</a></li>
+          <li><a href="paiement.html">Paiement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="ur"
+            type="button"onclick="location.href='urgence.html'" > URGENCE</button>
+          <button
+            class="rdv"
+            type="button"
+            onclick="location.href='rende-vous.html'"> Prendre RDV</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="principale wrapper" role="main">
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contactez-nous</h2>
+
+        <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+          <div class="contact-info" style="background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+            <h3>Coordonnées</h3>
+            <p><strong>Téléphone :</strong> <a href="tel:610783753">610 783 753</a></p>
+            <p><strong>Email :</strong> <a href="mailto:xhamyexpresse@gmail.com">xhamyexpresse@gmail.com</a></p>
+            <p><strong>Adresse :</strong><br/>Adresse du centre — Ville, Pays</p>
+            <h4>Horaires</h4>
+            <p>Lun–Ven 08:00–18:00 — Urgences 24h/24</p>
+
+            <h4 style="margin-top:12px">Accès rapide</h4>
+            <p><a class="btn btn-outline" href="contact.html#map">Voir la carte</a></p>
+          </div>
+
+          <div class="contact-form" style="background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+            <h3>Envoyer un message</h3>
+            <form action="#" method="post" class="contact-us-form" aria-label="Formulaire de contact">
+              <label>Nom complet
+                <input type="text" name="nom" required placeholder="Votre nom">
+              </label>
+
+              <label>Téléphone
+                <input type="tel" name="tel" placeholder="06 00 00 00 00">
+              </label>
+
+              <label>Email
+                <input type="email" name="email" required placeholder="vous@exemple.com">
+              </label>
+
+              <label>Objet
+                <select name="objet">
+                  <option>Demande d'information</option>
+                  <option>Rendez-vous</option>
+                  <option>Réclamation</option>
+                  <option>Autre</option>
+                </select>
+              </label>
+
+              <label>Message
+                <textarea name="message" rows="5" required placeholder="Votre message"></textarea>
+              </label>
+
+              <label style="font-weight:600;">
+                <input type="checkbox" name="consent" required> J'accepte que mes données soient utilisées pour répondre à ma demande.
+              </label>
+
+              <div class="form-actions" style="margin-top:8px;">
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+                <button class="btn btn-outline" type="reset">Effacer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <section id="map" aria-label="Plan d'accès" style="margin-top:18px;">
+          <h3>Plan d'accès</h3>
+          <div class="map" style="background:#eef6fb;border-radius:10px;height:400px;display:flex;align-items:center;justify-content:center;color:var(--muted);overflow:hidden;">
+            <!-- Carte Google Maps avec adresse de Conakry -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0906599999987!2d-10.6526!3d9.5412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0581b2b2b2b2b2d%3A0x2b2b2b2b2b2b2b2b!2sMatoto%2C%20Conakry!5e0!3m2!1sfr!2s!4v1234567890" 
+              width="100%" 
+              height="100%" 
+              style="border:none;border-radius:10px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localisation de Hamy International à Conakry">
+            </iframe>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer wrapper" style="margin-top:18px;">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>Tél : <a href="tel:610783753">610 783 753</a><br/>Email : <a href="mailto:xhamyexpresse@gmail.com">xhamyexpresse@gmail.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h3>Adresse</h3>
+          <p>Conackry/Matoto/Kabhitaya</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© Développé par Fode Lamine Diane</div>
+      <div style="text-align:center;padding-top:8px;color:var(--muted);">
+        <a href="privacy.html" style="color:var(--primary);text-decoration:none;">Politique de confidentialité</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paiement - Hamy International</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="en-tete" role="banner">
+    <div class="logo">
+      <img src="../image/Logo.jpg" alt="Logo Hamy International" />
+      <div class="titre"><h1 class="Pr">Hamy International</h1></div>
+    </div>
+    <nav aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="specialité.html">Spécialistes</a></li>
+        <li><a href="rende-vous.html">Prendre RDV</a></li>
+        <li><a href="teleconsultation.html">Téléconsultation</a></li>
+        <li><a href="prescription.html">Ordonnance</a></li>
+        <li><a href="paiement.html">Paiement</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="max-width:1000px;margin:32px auto;padding:16px;">
+    <h2>Paiement</h2>
+    <p>Cette page propose des modes de paiement pour les consultations et acomptes. Actuellement il s'agit d'une simulation pour tests locaux.</p>
+
+    <section style="display:grid;grid-template-columns:1fr;gap:18px;max-width:720px;margin:18px auto;">
+      <div style="padding:16px;border-radius:10px;border:1px solid var(--border);">
+        <h3>Paiement par carte (Stripe)</h3>
+        <p>Intégration recommandée : Stripe Checkout ou Elements côté serveur. Ici nous simulons un lancé vers une page de paiement.</p>
+        <label>Montant (USD)<input id="amount" type="number" min="1" value="10" style="width:120px;margin-left:8px;" /></label>
+        <div style="margin-top:12px;">
+          <button id="payCard" class="btn btn-primary">Payer par carte (simulé)</button>
+        </div>
+      </div>
+
+      <div style="padding:16px;border-radius:10px;border:1px solid var(--border);">
+        <h3>Paiement Mobile Money</h3>
+        <p>Instructions : envoyez le montant au numéro <strong>610 783 753</strong> en précisant la référence de la réservation.</p>
+        <label>Numéro mobile <input id="mobileNumber" type="tel" placeholder="610783753" style="width:160px;margin-left:8px;" /></label>
+        <div style="margin-top:12px;">
+          <button id="payMobile" class="btn btn-outline">Simuler paiement Mobile</button>
+        </div>
+      </div>
+
+      <div id="paymentResult" style="display:none;padding:14px;border-radius:8px;"></div>
+
+      <div style="padding:12px;border-radius:10px;border:1px dashed var(--border);font-size:0.95rem;background:#fafafa;">
+        <strong>Note technique :</strong>
+        <ul>
+          <li>Pour un vrai paiement par carte, il faut un serveur qui crée une session Stripe Checkout (clé secrète côté serveur).</li>
+          <li>Alternatives : PayPal, PayU, Orange Money. Choisir selon pays et disponibilité.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const payCard = document.getElementById('payCard');
+      const payMobile = document.getElementById('payMobile');
+      const amountEl = document.getElementById('amount');
+      const mobileEl = document.getElementById('mobileNumber');
+      const result = document.getElementById('paymentResult');
+
+      function showResult(text, ok){
+        result.style.display = 'block';
+        result.textContent = text;
+        result.style.background = ok ? '#eefaf0' : '#fff0f0';
+        result.style.border = ok ? '1px solid #8fe0a6' : '1px solid #ff8a8a';
+      }
+
+      function savePayment(record){
+        try{
+          const store = JSON.parse(localStorage.getItem('rdvPayments')||'[]');
+          store.push(record);
+          localStorage.setItem('rdvPayments', JSON.stringify(store));
+        }catch(e){ console.error(e); }
+      }
+
+      payCard.addEventListener('click', function(){
+        const amount = Number(amountEl.value) || 0;
+        if(amount <= 0){ showResult('Montant invalide', false); return; }
+        // Simulation: open a small window and then mark success
+        const ref = 'PAY-' + Date.now();
+        savePayment({id:ref, method:'card', amount, created:new Date().toISOString()});
+        showResult('Paiement par carte simulé réussi — référence: ' + ref, true);
+      });
+
+      payMobile.addEventListener('click', function(){
+        const num = mobileEl.value.trim() || '610783753';
+        const amount = Number(amountEl.value) || 0;
+        if(amount <= 0){ showResult('Montant invalide', false); return; }
+        const ref = 'MM-' + Date.now();
+        savePayment({id:ref, method:'mobile', amount, mobile:num, created:new Date().toISOString()});
+        showResult('Paiement Mobile simulé enregistré — référence: ' + ref, true);
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Hamy International Clinique</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="en-tete" role="banner">
+      <div class="logo">
+        <img src="../image/Logo.jpg" alt="Logo Hamy International" />
+        <div class="titre">
+          <h1 class="Pr">Hamy International</h1>
+          <p class="slogan">Votre santé est notre priorité</p>
+        </div>
+      </div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="specialité.html">Spécialistes</a></li>
+          <li><a href="rende-vous.html">Prendre RDV</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="prescription.html">Ordonnance</a></li>
+          <li><a href="paiement.html">Paiement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="ur"
+            type="button"
+            onclick="location.href='urgence.html'" > URGENCE</button>
+          <button
+            class="rdv"
+            type="button"
+            onclick="location.href='rende-vous.html'"> Prendre RDV</button>
+        </div>
+      </nav>
+    </header>
+     <!-- Services en grille -->
+     <section id="services" class="services-grid" aria-labelledby="diane-service">
+        <h2 id="diane-service">Nos services</h2>
+        <div class="lmd-services">
+          <article class="service">
+            <h4>Médecine générale</h4>
+            <p>Consultations courantes et bilans de santé.</p>
+          </article>
+          <article class="service">
+            <h4>Pédiatrie</h4>
+            <p>Soins et suivi de l'enfant.</p>
+          </article>
+          <article class="service">
+            <h4>Imagerie</h4>
+            <p>Radiologie, échographie et scanner.</p>
+          </article>
+          <article class="service">
+            <h4>Laboratoire</h4>
+            <p>Analyses rapides et fiables.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="services-grid" aria-labelledby="diane-service">
+        <div class="lmd-services">
+          <article class="service">
+            <h4>Gynécologie-Obstétrique</h4>
+            <p>Suivi de grossesse, consultations féminines, échographies prénatales</p>
+          </article>
+          <article class="service">
+            <h4>Cardiologie</h4>
+            <p>Consultations, ECG, échocardiographies et suivi des maladies cardiaques.</p>
+          </article>
+          <article class="service">
+            <h4>Ophtalmologie</h4>
+            <p>Examen de la vue, traitement des troubles visuels, chirurgie des yeux.</p>
+          </article>
+          <article class="service">
+            <h4> ORL (Oto-Rhino-Laryngologie)</h4>
+            <p>Soins des oreilles, du nez et de la gorge</p>
+          </article>
+        </div>
+      </section>
+      
+      <section id="services" class="services-grid" aria-labelledby="diane-service">
+        <div class="lmd-services">
+          <article class="service">
+            <h4>Dermatologie</h4>
+            <p>Traitement des maladies de la peau, acné, allergies cutanées, etc.</p>
+          </article>
+          <article class="service">
+            <h4>Psychologie / Psychiatrie</h4>
+            <p>Accompagnement mental, gestion du stress, thérapies.</p>
+          </article>
+          <article class="service">
+            <h4>Nutrition / Diététique</h4>
+            <p>Suivi alimentaire, perte de poids, alimentation thérapeutique.</p>
+          </article>
+          <article class="service">
+            <h4>Kinésithérapie / Rééducation</h4>
+            <p>Soins post-traumatiques, rééducation physique et massages thérapeutiques.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section CTA - Prendre rendez-vous -->
+      <section class="cta-services" aria-labelledby="cta-rdv" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:48px 24px;margin:32px 0;border-radius:12px;text-align:center;">
+        <h2 id="cta-rdv" style="margin-bottom:12px;font-size:1.8rem;">Prêt à bénéficier de nos services ?</h2>
+        <p style="margin-bottom:24px;font-size:1.1rem;opacity:0.95;">Nos équipes sont mobilisées pour vous accueillir et vous offrir les meilleurs soins.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="rende-vous.html" class="btn btn-primary" style="background:#fff;color:var(--primary);font-weight:600;padding:12px 24px;">Prendre rendez-vous</a>
+          <a href="contact.html" class="btn btn-outline" style="border-color:#fff;color:#fff;font-weight:600;padding:12px 24px;">Nous contacter</a>
+        </div>
+      </section>
+
+      <!-- Footer enrichi -->
+      <footer class="site-footer" style="margin-top:32px;background:#f8f9fa;padding:24px;border-top:1px solid var(--border);">
+        <div style="max-width:1200px;margin:0 auto;">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-bottom:24px;">
+            <div>
+              <h3 style="margin-bottom:12px;color:var(--primary);">Services</h3>
+              <ul style="list-style:none;padding:0;">
+                <li><a href="#" style="color:var(--text-light);text-decoration:none;">📋 Consultation générale</a></li>
+                <li><a href="#" style="color:var(--text-light);text-decoration:none;">🏥 Urgences 24h/24</a></li>
+                <li><a href="#" style="color:var(--text-light);text-decoration:none;">🧬 Analyses en ligne</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="margin-bottom:12px;color:var(--primary);">Contact</h3>
+              <p style="margin:6px 0;"><strong>Tél :</strong> <a href="tel:610783753" style="color:var(--primary);">610 783 753</a></p>
+              <p style="margin:6px 0;"><strong>Email :</strong> <a href="mailto:xhamyexpresse@gmail.com" style="color:var(--primary);">xhamyexpresse@gmail.com</a></p>
+            </div>
+            <div>
+              <h3 style="margin-bottom:12px;color:var(--primary);">Navigation</h3>
+              <ul style="list-style:none;padding:0;">
+                <li><a href="index.html" style="color:var(--text-light);text-decoration:none;">Accueil</a></li>
+                <li><a href="specialité.html" style="color:var(--text-light);text-decoration:none;">Spécialistes</a></li>
+                <li><a href="rende-vous.html" style="color:var(--text-light);text-decoration:none;">Prendre RDV</a></li>
+              </ul>
+            </div>
+          </div>
+          <div style="text-align:center;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);">
+            <p>© 2025 Hamy International. Tous droits réservés. | Développé par Fode Lamine Diane</p>
+            <p style="margin-top:8px;"><a href="privacy.html" style="color:var(--primary);text-decoration:none;">Politique de confidentialité</a></p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

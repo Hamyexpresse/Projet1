@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgence - Hamy International Clinique</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header class="en-tete" role="banner">
+      <div class="logo">
+        <img src="../image/Logo.jpg" alt="Logo Hamy International" />
+        <div class="titre">
+          <h1 class="Pr">Hamy International</h1>
+          <p class="slogan">Votre santé est notre priorité</p>
+        </div>
+      </div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="specialité.html">Spécialistes</a></li>
+          <li><a href="rende-vous.html">Prendre RDV</a></li>
+          <li><a href="teleconsultation.html">Téléconsultation</a></li>
+          <li><a href="prescription.html">Ordonnance</a></li>
+          <li><a href="paiement.html">Paiement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="ur"
+            type="button"
+            onclick="location.href='urgence.html'" > URGENCE</button>
+          <button
+            class="rdv"
+            type="button"
+            onclick="location.href='rende-vous.html'"> Prendre RDV</button>
+        </div>
+      </nav>
+    </header>
+    
+     <main class="principale wrapper" role="main">
+      <section class="booking" aria-labelledby="urgence-heading">
+        <h2 id="urgence-heading" class="kicker">URGENCES — Contact rapide</h2>
+
+        <div style="display:flex;gap:18px;flex-wrap:wrap;">
+          <div style="flex:1 1 320px;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+            <h3>Appelez immédiatement</h3>
+            <p style="font-size:1.25rem;margin:6px 0;"><strong>Tél urgence : <a href="tel:610783753">610 783 753</a></strong></p>
+            <p style="color:var(--muted)">Notre ligne urgence est joignable 24h/24. Indiquez votre nom, âge, motif et localisation.</p>
+
+            <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+              <a class="btn btn-primary" href="tel:610783753">Appeler</a>
+              <a class="btn btn-outline" href="rendezvous.html">Formulaire RDV</a>
+            </div>
+          </div>
+
+          <div style="flex:2 1 420px;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+            <h3>Que faire en attendant ?</h3>
+            <ul>
+              <li>Restez calme ; évaluez la respiration et la conscience.</li>
+              <li>Si saignement important : comprimez la plaie avec un pansement propre.</li>
+              <li>Si perte de connaissance ou difficulté à respirer : appelez le numéro d'urgence immédiatement.</li>
+              <li>Si réaction allergique sévère : administrer un antihistaminique ou auto‑injecteur si disponible et appeler.</li>
+              <li>Ne déplacez pas la personne blessée sauf danger immédiat.</li>
+            </ul>
+
+            <h4 style="margin-top:12px">Que prendre avec vous</h4>
+            <p style="color:var(--muted);margin:6px 0;">
+              Pièce d'identité, carte vitale/assurance, liste des médicaments, dossier médical si disponible.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" aria-labelledby="triage-heading" style="margin-top:18px;">
+        <h3 id="triage-heading">Priorité triage</h3>
+        <div class="feature" style="text-align:left;">
+          <h4>Rouge — Urgence vitale</h4>
+          <p>Arrivée immédiate (arrêt cardiorespiratoire, détresse respiratoire, hémorragie majeure).</p>
+        </div>
+        <div class="feature" style="text-align:left;">
+          <h4>Orange — Urgence grave</h4>
+          <p>Douleurs intenses, perte de conscience courte, signes neurologiques (paralysie, perte de la parole).</p>
+        </div>
+        <div class="feature" style="text-align:left;">
+          <h4>Jaune — Urgence modérée</h4>
+          <p>Fractures sans détresse, fièvre élevée persistante, plaies nécessitant suture.</p>
+        </div>
+        <div class="feature" style="text-align:left;">
+          <h4>Vert — Consultation rapide</h4>
+          <p>Douleurs légères, demandes de conseils, renouvellement d'ordonnance urgent.</p>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="urgence-faq" style="margin-top:18px;">
+        <h3 id="urgence-faq">FAQ urgences</h3>
+        <details><summary>Dois-je venir si j'ai de la fièvre ?</summary><p>Si la fièvre s'accompagne de difficultés respiratoires, somnolence importante ou douleur thoracique, appelez le numéro urgence.</p></details>
+        <details><summary>Puis‑je contacter par SMS ou WhatsApp ?</summary><p>La ligne principale est téléphonique ; vérifiez les canaux locaux disponibles. En cas d'urgence, privilégiez l'appel.</p></details>
+      </section>
+
+      <section class="partners" aria-label="Localisation" style="margin-top:18px;">
+        <h3>Localisation & horaires</h3>
+        <p style="margin:6px 0;">Adresse : Adresse du centre — Ville, Pays</p>
+        <p style="margin:6px 0;">Horaires service urgences : 24h/24 — Entrée principale : accueil urgences</p>
+        <p style="margin:6px 0;"><a class="btn btn-outline" href="contact.html">Voir la carte / Itinéraire</a></p>
+      </section>
+
+      <!-- CTA - Retour à l'accueil -->
+      <section style="background:linear-gradient(135deg,#f0f4f8,#e8f1f7);padding:24px;border-radius:12px;text-align:center;margin-top:32px;">
+        <p style="margin-bottom:12px;color:var(--text-light);">Situation non urgente ?</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="rende-vous.html" class="btn btn-primary">Prendre rendez-vous</a>
+          <a href="index.html" class="btn btn-outline">Retour à l'accueil</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer enrichi -->
+    <footer id="contact" class="site-footer" style="margin-top:32px;background:#f8f9fa;padding:24px;border-top:1px solid var(--border);">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-bottom:24px;">
+          <div>
+            <h3 style="margin-bottom:12px;color:var(--accent);">⚠️ URGENCE</h3>
+            <p style="margin:6px 0;"><strong>Tél urgence :</strong> <a href="tel:610783753" style="color:var(--accent);font-weight:600;font-size:1.2rem;">610 783 753</a></p>
+            <p style="color:var(--text-light);margin-top:8px;">Disponible 24h/24, 7j/7</p>
+          </div>
+          <div>
+            <h3 style="margin-bottom:12px;color:var(--primary);">Services</h3>
+            <ul style="list-style:none;padding:0;">
+              <li><a href="service.html" style="color:var(--text-light);text-decoration:none;">🏥 Tous nos services</a></li>
+              <li><a href="specialité.html" style="color:var(--text-light);text-decoration:none;">👨‍⚕️ Nos spécialistes</a></li>
+              <li><a href="rende-vous.html" style="color:var(--text-light);text-decoration:none;">📅 Prendre RDV</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="margin-bottom:12px;color:var(--primary);">Navigation</h3>
+            <ul style="list-style:none;padding:0;">
+              <li><a href="index.html" style="color:var(--text-light);text-decoration:none;">Accueil</a></li>
+              <li><a href="contact.html" style="color:var(--text-light);text-decoration:none;">Contact</a></li>
+              <li><a href="urgence.html" style="color:var(--text-light);text-decoration:none;">Urgences</a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="text-align:center;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);">
+          <p>© 2025 Hamy International. Tous droits réservés. | Développé par Fode Lamine Diane</p>
+          <p style="margin-top:8px;"><a href="privacy.html" style="color:var(--primary);text-decoration:none;">Politique de confidentialité</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+</html>
